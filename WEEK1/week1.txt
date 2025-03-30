@@ -1,0 +1,35 @@
+ print(line)
+Preserves all whitespace exactly as it appears in the file
+
+Includes newline characters (\n) at the end of each line
+
+Result: Double-spaced output (because print() adds its own newline to the existing one)
+
+python
+Copy
+# File content: "Hello\nWorld"
+with open("file.txt", "r") as f:
+    for line in f:
+        print(line) 
+# Output:
+# Hello
+#
+# World
+
+
+ print(line.strip())
+Removes leading/trailing whitespace (spaces, tabs, newlines)
+
+Eliminates the original newline character from the file
+
+Result: Clean single-spaced output (only print()'s newline remains)
+
+python
+Copy
+# Same file content
+with open("file.txt", "r") as f:
+    for line in f:
+        print(line.strip())
+# Output:
+# Hello
+# World
