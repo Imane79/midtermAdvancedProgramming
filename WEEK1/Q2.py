@@ -10,6 +10,7 @@ file = open("WEEK1/Q2.txt", 'w')
 file.write("Lecture 1: File Handling\n")
 file.write("Date: 2024-03-15\n")
 file.write("Topic: Python I/O\n")
+file.write("This is my first file\n")
 file.close()
 # File Reading
 file = open("WEEK1/Q2.txt", 'r')
